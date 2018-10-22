@@ -37,8 +37,8 @@ const shuffle = array => {
 
 class App extends Component {
   state = {
-    toShow: 4,
-    game: newGame(cats,4),
+    toShow: 12,
+    game: newGame(cats,12),
     points: 0,
     best: 0
   }

@@ -19,6 +19,22 @@ const newGame = (array, number) => {
   });
 }
 
+const shuffle = array => {
+  let currentIndex = array.length, temporaryValue, randomIndex;
+
+  while (0 !== currentIndex) {
+
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
 class App extends Component {
   state = {
     toShow: 4,
@@ -36,17 +52,17 @@ class App extends Component {
   }
 
   pointUp = id => {
-    console.log(id);
+    //console.log(id);
     this.setState({
       game: this.state.game.map(e=>{
-        console.log(e.id===id);
-        console.log(e.id===id ? {id: e.id, image: e.image, clicked: true} : e);
+        //console.log(e.id===id);
+        //console.log(e.id===id ? {id: e.id, image: e.image, clicked: true} : e);
         return e.id===id ? {id: e.id, image: e.image, clicked: true} : e
       }),
       points: this.state.points + 1,
       best: this.state.points + 1 > this.state.best ? this.state.points + 1 : this.state.best
     });
-    console.log(this.state.game);
+    //console.log(this.state.game);
   }
 
   render() {
@@ -54,7 +70,7 @@ class App extends Component {
       <div>
         <h1>Wildcat Clicky Game</h1>
         <h5>Points: {this.state.points}&nbsp;Best: {this.state.best}</h5>
-        {this.state.game.map(e=><CatCard key={e.id} id={e.id} image={e.image} endGame={this.endGame} pointUp={this.pointUp} clicked={e.clicked}/>)}
+        {shuffle(this.state.game).map(e=><CatCard key={e.id} id={e.id} image={e.image} endGame={this.endGame} pointUp={this.pointUp} clicked={e.clicked}/>)}
       </div>
     );
   }

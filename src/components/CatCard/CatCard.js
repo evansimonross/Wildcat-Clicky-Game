@@ -7,22 +7,14 @@ const rename = (image) => {
 }
 
 class CatCard extends Component {
-  state = {
-    clicked: this.props.clicked
-  }
 
   click = () => {
-    if(this.state.clicked){
+    if(this.props.clicked){
       this.props.endGame();
     }
     else{
       this.props.pointUp(this.props.id);
-      this.setState({clicked: true});
     }
-  }
-
-  restart = () => {
-    this.setState({clicked: false});
   }
 
   render(){

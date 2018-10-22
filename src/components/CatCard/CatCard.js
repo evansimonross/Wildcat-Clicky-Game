@@ -8,7 +8,7 @@ const rename = (image) => {
 
 class CatCard extends Component {
   state = {
-    clicked: false
+    clicked: this.props.clicked
   }
 
   click = () => {
@@ -16,9 +16,13 @@ class CatCard extends Component {
       this.props.endGame();
     }
     else{
+      this.props.pointUp(this.props.id);
       this.setState({clicked: true});
-      this.props.pointUp();
     }
+  }
+
+  restart = () => {
+    this.setState({clicked: false});
   }
 
   render(){

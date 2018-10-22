@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "image": "african-golden-cat.png"
+  },
+  {
+    "id": 2,
+    "image": "african-wild-cat.png"
+  },
+  {
+    "id": 3,
+    "image": "andean-mountain-cat.png"
+  },
+  {
+    "id": 4,
+    "image": "asian-golden-cat.png"
+  },
+  {
+    "id": 5,
+    "image": "asian-leopard-cat.png"
+  },
+  {
+    "id": 6,
+    "image": "black-footed-cat.png"
+  },
+  {
+    "id": 7,
+    "image": "caracal.png"
+  },
+  {
+    "id": 8,
+    "image": "cheetah.png"
+  },
+  {
+    "id": 9,
+    "image": "chinese-mountain-cat.png"
+  },
+  {
+    "id": 10,
+    "image": "clouded-leopard.png"
+  },
+  {
+    "id": 11,
+    "image": "european-wild-cat.png"
+  },
+  {
+    "id": 12,
+    "image": "flat-headed-cat.png"
+  },
+  {
+    "id": 13,
+    "image": "geoffroy-cat.png"
+  },
+  {
+    "id": 14,
+    "image": "iriomote-cat.png"
+  },
+  {
+    "id": 15,
+    "image": "jaguar.png"
+  },
+  {
+    "id": 16,
+    "image": "jaguarundi.png"
+  },
+  {
+    "id": 17,
+    "image": "jungle-cat.png"
+  },
+  {
+    "id": 18,
+    "image": "kodkod.png"
+  },
+  {
+    "id": 19,
+    "image": "leopard.png"
+  },
+  {
+    "id": 20,
+    "image": "lion.png"
+  },
+  {
+    "id": 21,
+    "image": "lynx.png"
+  },
+  {
+    "id": 22,
+    "image": "marbled-cat.png"
+  },
+  {
+    "id": 23,
+    "image": "margay.png"
+  },
+  {
+    "id": 24,
+    "image": "ocelot.png"
+  },
+  {
+    "id": 25,
+    "image": "puma.png"
+  },
+  {
+    "id": 26,
+    "image": "red-lynx.png"
+  },
+  {
+    "id": 27,
+    "image": "rusty-spotted-cat.png"
+  },
+  {
+    "id": 28,
+    "image": "sand-cat.png"
+  },
+  {
+    "id": 29,
+    "image": "serval.png"
+  },
+  {
+    "id": 30,
+    "image": "snow-leopard.png"
+  },
+  {
+    "id": 31,
+    "image": "tiger-cat.png"
+  },
+  {
+    "id": 32,
+    "image": "tiger.png"
+  }
+]

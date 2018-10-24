@@ -3,9 +3,9 @@ import CatCard from "./components/CatCard";
 import cats from "./cats.json";
 import './App.css';
 
-const STARTING_AMT = 12;
+const STARTING_AMT = 8;
 const ABSOLUTE_MAX = 32;
-const LEVEL_UP_AMT = 4;
+const LEVEL_UP_AMT = 3;
 
 const newGame = (array, number) => {
   if (number > array.length) { number = array.length; }
@@ -48,28 +48,41 @@ class App extends Component {
     level: 1
   }
 
+  // TODO: Add game over notification
   endGame = () => {
     this.setState({
       game: newGame(cats, this.state.max),
       points: 0
     });
-    //this.render();
   }
 
+  // TODO: Add notifications when level changes
   pointUp = id => {
     if (this.state.points >= this.state.max - 1) {
-      let newMax = this.state.max===ABSOLUTE_MAX ? ABSOLUTE_MAX : this.state.max + LEVEL_UP_AMT;
-      console.log(newMax);
-      this.setState({
-        max: newMax,
-        game: newGame(cats, newMax),
-        points: 0,
-        best: this.state.best + 1,
-        level: (newMax-(STARTING_AMT-LEVEL_UP_AMT))/LEVEL_UP_AMT
-      });
-      //this.render();
+      let newMax = this.state.max + LEVEL_UP_AMT;
+      if (newMax > ABSOLUTE_MAX) {
+        // Start a new game at base level. The player has already beat max level
+        this.setState({
+          max: STARTING_AMT,
+          game: newGame(cats, STARTING_AMT),
+          points: 0,
+          best: this.state.best + 1,
+          level: 1
+        });
+      }
+      else {
+        // Move to next level
+        this.setState({
+          max: newMax,
+          game: newGame(cats, newMax),
+          points: 0,
+          best: this.state.best + 1,
+          level: (newMax - (STARTING_AMT - LEVEL_UP_AMT)) / LEVEL_UP_AMT
+        });
+      }
     }
     else {
+      // Just give a point, level doesn't change
       this.setState({
         game: this.state.game.map(e => {
           return e.id === id ? { id: e.id, image: e.image, clicked: true } : e

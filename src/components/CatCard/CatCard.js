@@ -19,7 +19,7 @@ class CatCard extends Component {
 
   render() {
     return (
-      <img className="cat" src={"Wildcat-Clicky-Game/images/" + this.props.image}
+      <img className="cat" src={"images/" + this.props.image}
         alt={rename(this.props.image)} title={rename(this.props.image)} 
         onClick={this.click}></img>
     );

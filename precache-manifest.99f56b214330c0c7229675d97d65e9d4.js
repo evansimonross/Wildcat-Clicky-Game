@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/Wildcat-Clicky-Game/static/js/runtime~main.74193567.js"
   },
   {
-    "revision": "73849a5ab798c2b557df",
-    "url": "/Wildcat-Clicky-Game/static/js/main.73849a5a.chunk.js"
+    "revision": "94e4538de2e4380fe811",
+    "url": "/Wildcat-Clicky-Game/static/js/main.94e4538d.chunk.js"
   },
   {
     "revision": "5b44c91536d8dde73b6a",
     "url": "/Wildcat-Clicky-Game/static/js/1.5b44c915.chunk.js"
   },
   {
-    "revision": "73849a5ab798c2b557df",
-    "url": "/Wildcat-Clicky-Game/static/css/main.db57e73a.chunk.css"
+    "revision": "94e4538de2e4380fe811",
+    "url": "/Wildcat-Clicky-Game/static/css/main.44e5cd33.chunk.css"
   },
   {
-    "revision": "32bf2ebe39b0b4bd8408b0715d6a3873",
+    "revision": "fff89552af42fe8300a6bf5c1f196b4b",
     "url": "/Wildcat-Clicky-Game/index.html"
   }
 ];

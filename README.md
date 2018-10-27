@@ -1,5 +1,5 @@
 # Wildcat Clicky Hame
-A rock-paper-scissors game with multiplayer functionality. 
+A memory game with a wildcat theme.
 
 ## How to Play
 [Click here to play the game](https://evansimonross.github.io/Wildcat-Clicky-Game/).

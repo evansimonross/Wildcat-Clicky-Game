@@ -74,7 +74,7 @@ class App extends Component {
       }
       else {
         // Move to next level
-        alert(`You beat level ${this.state.level}! Are you ready for the next challenge?`
+        alert(`You beat level ${this.state.level}! Are you ready for the next challenge?`);
         this.setState({
           max: newMax,
           game: newGame(cats, newMax),

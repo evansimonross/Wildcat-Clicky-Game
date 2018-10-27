@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/Wildcat-Clicky-Game/static/css/main.db57e73a.chunk.css"
   },
   {
-    "revision": "d717ab63a87fc6adfa554a5bf0bcff4a",
+    "revision": "32bf2ebe39b0b4bd8408b0715d6a3873",
     "url": "/Wildcat-Clicky-Game/index.html"
   }
 ];

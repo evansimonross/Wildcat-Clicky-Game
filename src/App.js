@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CatCard from "./components/CatCard";
+import { Modal } from 'react-materialize';
 import cats from "./cats.json";
 import './App.css';
 
@@ -50,6 +51,7 @@ class App extends Component {
 
   // TODO: Add game over notification
   endGame = () => {
+    console.log(this.modal);
     this.setState({
       game: newGame(cats, this.state.max),
       points: 0
@@ -99,6 +101,13 @@ class App extends Component {
         <h1>Wildcat Clicky Game</h1>
         <h5>Points: {this.state.points}&nbsp;Best: {this.state.best}&nbsp;Level: {this.state.level}</h5>
         {shuffle(this.state.game).map(e => <CatCard key={e.id} id={e.id} image={e.image} endGame={this.endGame} pointUp={this.pointUp} clicked={e.clicked} />)}
+        <div>
+          <Modal
+            id='modal'
+            header='Modal Header'>
+            Lorem ipsum dolor sit amet
+          </Modal>
+        </div>;
       </div>
     );
   }
